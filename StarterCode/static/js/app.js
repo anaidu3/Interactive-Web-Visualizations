@@ -23,7 +23,7 @@ function dropdown() {
 //add the metadata by filtering on id
 //add the key-value pair from the metadata JSON object somewhere on the page.
     function metadata(id) {
-        d3.json("./samples.json").then(data => {
+        d3.json("samples.json").then(data => {
             var sampleMetadata = data.metadata;
             var result = sampleMetadata.filter(obj => obj.id == id);
             var filtered_result = result[0];
